@@ -1,0 +1,18 @@
+<div class="container login-container">
+    <ng-container *ngIf="!bool;else elseblock">
+        <h1>Login now!</h1>
+    <div class="login-row">
+    <form #ngLoginForm="ngForm" class="email-for" (ngSubmit)="onLoginClick()">
+        <input name="email" type="text" class="form-control" placeholder="enter your email!" [(ngModel)]="email">
+        <button  class="btn btn-primary mt-2 mb-2 w-100">Submit</button>
+        <a routerLink="/register">Doesn't have an account?</a>
+      
+    </form>
+</div>
+    </ng-container>
+    <ng-template #elseblock>
+<div class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+    </ng-template>
+</div>

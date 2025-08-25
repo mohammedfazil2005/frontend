@@ -1,0 +1,12 @@
+<div class="container login-container">
+    <h1>Register now!</h1>
+    <div class="login-row">
+    <form class="email-for" [formGroup]="registerForm" (ngSubmit)="onBtnClick()">
+         <input formControlName="username" type="text" class="form-control" placeholder="enter your username!">
+        <input formControlName="email" type="text" class="form-control" placeholder="enter your email!">
+        <input formControlName="password" type="text" class="form-control" placeholder="enter your password!">
+        <button class="btn btn-primary mt-2 mb-2 w-100">Submit</button>
+        <a routerLink="/login">Already have an account?</a>
+    </form>
+</div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container login-container">
+    <h1>Enter OTP</h1>
+    <div class="login-row">
+    <form class="email-for" (ngSubmit)="onOTPsend()">
+        <input [maxlength]="4" [(ngModel)]="otp" name="otp" type="number" class="form-control" placeholder="enter OTP!" >
+        <button class="btn btn-danger mt-2 mb-2 w-100">Submit</button>
+         <div style="display: flex;align-items: center;">
+         <button type="button" (click)="onResendClick()" [disabled]="!btnBool"  style="padding: 0px;">Resend </button>
+        <p style="border: none;">{{timer}}</p>
+       </div>
+    </form>
+</div>
+</div>

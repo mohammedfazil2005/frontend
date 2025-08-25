@@ -1,0 +1,19 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.login-row{
+    width: 500px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.email-for{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

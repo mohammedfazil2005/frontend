@@ -1,0 +1,14 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.login-row{
+    width: 500px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
